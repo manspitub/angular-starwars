@@ -1,1 +1,5 @@
-<p>people-list works!</p>
+<button mat-raised-button color="warn"><a [routerLink]="['/planet-list']" routerLinkActive="router-link-active" >planets</a></button>
+
+<div>
+  <app-people-item class="people-item" *ngFor="let people of peopleList" [people]="people"></app-people-item>
+</div>

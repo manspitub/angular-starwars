@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { PeopleResponse } from '../interfaces/people.interface';
+import { People, PeopleResponse } from '../interfaces/people.interface';
 
 const API_BASE_URL = 'https://swapi.dev/api/people/';
 
@@ -17,4 +17,8 @@ export class PeopleService {
   getPeopleList(): Observable<PeopleResponse>{
     return this.http.get<PeopleResponse>(`${API_BASE_URL}`)
   }
-}
+
+  getPeopleByid(id:string): Observable<People>{
+    return this.http.get<People>(`https://swapi.dev/api/people/${id}`)
+  }
+ }

@@ -1,0 +1,4 @@
+.lista:nth-child(odd){
+  background-color:silver;
+  color: red;
+}

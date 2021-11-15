@@ -17,4 +17,14 @@ i:number= 0;
   ngOnInit(): void {
   }
 
+  getPeopleId(url: string | undefined):string {
+    if(url) {
+      let splitArray = url.split("/");
+      let id = splitArray[5];
+      return id;
+    }else{
+      return ''
+    }
+  }
+
 }

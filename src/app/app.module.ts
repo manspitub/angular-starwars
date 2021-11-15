@@ -9,7 +9,6 @@ import { MaterialImportsModule } from './modules/material-imports.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetDetailsComponent } from './component/planet-details/planet-details.component';
-import { PlanetSelectedComponent } from './components/planet-selected/planet-selected.component';
 import { PeopleListComponent } from './component/people-list/people-list.component';
 import { PeopleItemComponent } from './component/people-item/people-item.component';
 import { PeopleDetailsComponent } from './component/people-details/people-details.component';
@@ -30,8 +29,7 @@ import { MatCard } from '@angular/material/card';
     AppRoutingModule,
     MaterialImportsModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    MatCard
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

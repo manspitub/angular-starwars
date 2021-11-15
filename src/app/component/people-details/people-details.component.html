@@ -1,1 +1,12 @@
-<p>people-details works!</p>
+
+  <h1 mat-dialog-title class="people">Detalles de la Personita</h1>
+  <div mat-dialog-content class="people">
+      <p>name : {{person.name}}</p>
+      <p>masa: {{person?.mass}}</p>
+      <p>altura : {{person?.height}}</p>
+      <p> color de piel: {{person?.skin_color}}</p>
+      <div >nº de pelis: {{person.films.length}}</div>
+      <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+        <a [routerLink]="['/people-list']" routerLinkActive="router-link-active" ><mat-icon>home</mat-icon></a>
+      </button>
+  </div>
