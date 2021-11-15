@@ -1,0 +1,12 @@
+
+<ng-container *ngIf="planeta">
+  <h1 mat-dialog-title>Detalles de el Planeta</h1>
+  <div mat-dialog-content>
+      <p>name : {{planeta.name}}</p>
+      <p>population : {{planeta?.population}}</p>
+      <p>terrain : {{planeta?.terrain}}</p>
+      <p> periodo de rotacion: {{planeta?.rotation_period}}</p>
+      <!--Has flipao con el length eh miguel-->
+      <div >residentes: {{planeta.residents.length}}</div>
+  </div>
+</ng-container>
